@@ -5,24 +5,12 @@ using System.IO;
 
 namespace MovementOn2DPlanesAndChangingStoryGeneration
 {
-    class MovementPlane
+    class BoardFunctions
     {
         const int BoardSize = 11;
         //Movement planes
         int x { get; set; } = 6;
         int y { get; set; } = 6;
-
-        enum TerrainTypes {
-            Grassland,
-            Forest,
-            Desert,
-            Tundra,
-            City,
-            Swamp,
-            Blight,
-            Pixie
-        }
-
 
         public void BoardGeneration(string name)
         {
@@ -52,7 +40,7 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                 while ((line = BoardReader.ReadLine()) != null)
                 {
                     count++;
-                    Console.WriteLine(line); 
+                    Console.WriteLine(line);
                 }
             }
 
@@ -74,21 +62,14 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
             }
         }
 
-        private void StoryGeneration(int terrain)
-        {
-            //Will grab a random story according to the terrain and give options. Will interact with inventory.
-
-            Console.WriteLine("You fall over and die.\nItem recieved: Bones");
-        }
-
         public void Movement(char direction) //out string story, out char storytype)
         {
             //Movement block
-            switch(direction){
+            switch (direction)
+            {
                 case 'N':
                     Console.WriteLine("Going North...");
                     y--;
-                    
                     break;
                 case 'S':
                     Console.WriteLine("Going South...");
@@ -104,8 +85,9 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                     break;
             }
             int terrain = TerrainChecker();
-            StoryGeneration(terrain);
-            
+            StoryUtils.StoryGeneration(terrain);
+
         }
     }
 }
+
