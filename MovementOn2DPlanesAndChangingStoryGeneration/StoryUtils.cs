@@ -10,7 +10,6 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
         public static void StoryGeneration(int terrain)
         {
             //Will grab a random story according to the terrain and give options. Will interact with inventory when implemented.
-
             string terrainfile;
 
             switch (terrain)
@@ -44,10 +43,32 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                     terrainfile = @".\TerrainStories\Grasslands.txt";
                     break;
             }
-
+            
+            //Performing actions with file contents
             using (StreamReader storystream = new StreamReader(terrainfile))
             {
                 Random randnum = new Random();
+
+                //Moving to random line
+                for (int i = 0; i < randnum.Next(10); i++)
+                {
+                    storystream.ReadLine();
+                }
+
+                //Interpreting story type
+                string longformstory = storystream.ReadLine();
+                char storytype = longformstory[0];
+
+                switch (storytype)
+                {
+                    case 'A':
+                        StringBuilder createstring = new StringBuilder();
+                        string storycontent;            
+                        break;
+
+                }
+
+
                 Console.WriteLine(storystream.ReadLine());
             }
         }
