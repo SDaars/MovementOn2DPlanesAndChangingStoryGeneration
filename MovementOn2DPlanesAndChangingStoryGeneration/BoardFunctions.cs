@@ -57,8 +57,8 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                 }
                 string boardrow = BoardReader.ReadLine();
 
-                Console.WriteLine(boardrow[(x - 1)]);
-                return boardrow[x];
+                int terrainnum = (int)Char.GetNumericValue(boardrow[(x - 1)]);
+                return terrainnum;
             }
         }
 
