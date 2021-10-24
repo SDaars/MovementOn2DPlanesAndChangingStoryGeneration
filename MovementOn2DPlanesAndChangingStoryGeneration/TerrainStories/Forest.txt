@@ -1,2 +1,5 @@
-﻿A"Your boot caught on a large root, bent into an arch, looking to almost have purposely tripped your foot. You kicked it again in anger, badly hurting your foot. Trying not to limp, you walk away."
-A"\"Ahh,\" You relaxed on a nice rock overlooking a valley. This forest really isn't so bad."
+﻿A"Your boot caught on a large root, bent into an arch, looking as if it had purposely tripped you. You kicked it again in anger, badly hurting your foot. Of course, you couldn't show it your pain, or it would be smug. Trying not to limp, you walk away."
+A"You relaxed on a nice rock overlooking a valley. 'This forest really isn't so bad.' You say to yourself."
+A"I see trees of green, red roses too."
+A"In the morning you met another traveller. He seemed like a nice fellow, but then tried to steal your crackers while you weren't looking. You were proud of how well you hid the body."
+A"You came across the ruins of a small village, completely taken over by the surrounding flora. You wonder what happened to the villagers."

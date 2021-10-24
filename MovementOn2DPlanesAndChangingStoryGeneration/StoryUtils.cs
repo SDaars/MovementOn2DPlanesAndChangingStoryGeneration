@@ -44,19 +44,17 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                     terrainfile = @".\TerrainStories\Grasslands.txt";
                     break;
             }
-            Console.WriteLine(terrainfile);
 
             //Performing actions with file contents
             using (StreamReader storystream = new StreamReader(terrainfile))
             {
+                //Moving to random line
                 Random randnum = new Random();
-
-                //Moving to random line, must implement total line calculator before use
-                /*for (int i = 0; i < 1; i++)
+                int filelength = File.ReadAllLines(terrainfile).Length;
+                for (int i = 0; i < randnum.Next(filelength); i++)
                 {
-
-                    Console.WriteLine(storystream.ReadLine());
-                }*/
+                    storystream.ReadLine();
+                }
 
                 //Interpreting story type
                 string longformstory = storystream.ReadLine();

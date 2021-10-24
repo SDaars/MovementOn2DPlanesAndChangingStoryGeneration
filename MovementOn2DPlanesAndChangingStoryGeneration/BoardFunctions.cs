@@ -24,7 +24,7 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                 {
                     for (int i = 0; i < BoardSize; i++)
                     {
-                        int randnum = ranterrain.Next(7);
+                        int randnum = ranterrain.Next(8);
                         BoardStream.Write(randnum);
                     }
                     BoardStream.Write("\n");

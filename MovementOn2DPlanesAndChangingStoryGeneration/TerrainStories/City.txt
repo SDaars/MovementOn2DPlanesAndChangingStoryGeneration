@@ -1,2 +1,5 @@
 ﻿A"The streets are bustling, people moving to and fro in their daily lives. All are fully concerned only with their small city lives. Most of these people probably haven't set foot far from the guardian stone walls."
-A"You see an old lady fall over and drop her basket full of apples. As if she was simply a rock in their way, people ignored her troubles and moved around her, the rush of people kicking the apples away.\nYou help her collecting the produce that wasn't crushed, and went on your way."
+A"You see an old lady fall over and drop her basket full of apples. As if she was simply a rock in their way, people ignored her troubles and moved around her, the rush of people kicking the apples away. You help her collecting the produce that wasn't crushed, and went on your way."
+A"This city had huge towers, going past even the clouds. How the thing didn't fall from the sheer weight was a miracle."
+A"At an intersection, a musician played a beautiful song. You gave him two silver coins and went on your way."
+A"A group of thugs tried to take your money. Oddly, the fellows turned out to be pretty fun, and you had gone to the pub together."

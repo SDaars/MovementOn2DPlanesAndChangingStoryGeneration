@@ -1,2 +1,5 @@
 ﻿A"It looked like the very world in this place was weeping. A solemn, ghastly place. The plant was turned a sick purple, and the animals were either dead or close to it."
-A"You stepped on something that gave out a sickening, wet crunch. You look down, disgusted at what you see. Some kind of rabbit, more bones than flesh, its head popped under your weight. The poor animal didn't have the strength to run away.\nAfter wiping your boot on the dirt, you continue walking, hoping to get out of this place soon."
+A"You stepped on something that gave out a sickening, wet crunch. You look down, disgusted at what you see. Some kind of rabbit, more bones than flesh, its head popped under your weight. The poor animal didn't have the strength to run away. After wiping your boot on the dirt, you continue walking, hoping to get out of this place soon."
+A"At least fires still looked cozy and inviting in this hell. It was a nice break from the disgustingness of the environment."
+A"Midday again, walking through a horrible place, wanting to throw up every time you open your eyes."
+A"Maybe everything here should just be burnt down to the ground. It would certainly be better to look at, probably even better smelling."

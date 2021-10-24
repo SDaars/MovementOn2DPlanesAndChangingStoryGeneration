@@ -1,2 +1,5 @@
 ﻿A"Your very blood was was burning in this sandy hell. You've lost count of the amount of times a sandstorm has almost choked you to death, the grains so fine they go straight through cloth."
 A"A lizard crawled across the sand, somehow unaffected by the angry sun. Sometimes at night, he swore at that big heavenly thing. Of course, he wouldn't do it when the sun was actually around, he wasn't crazy."
+A"You passed a caravan drawn by camels. Curiously, when you looked back, they were gone."
+A"This was definitely the most boring journy you've undertaken. Even the blight was more interesting, albeit in a horrible way."
+A"You wonder how desert animals get food and water. It would suggest that there was a lake or something nearby, wouldn't it?"
