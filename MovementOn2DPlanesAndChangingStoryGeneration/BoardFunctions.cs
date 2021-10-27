@@ -62,31 +62,41 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
             }
         }
 
-        public void Movement(char direction) //out string story, out char storytype)
+        public void Movement(char direction)
         {
-            //Movement block
-            switch (direction)
+            string directionString = direction.ToString().ToUpper();
+            if ((directionString == "N") || (directionString == "E") || (directionString == "S") || (directionString == "W"))
             {
-                case 'N':
-                    Console.WriteLine("Going North...");
+                switch (directionString)
+                {
+                    case "N":
+                        Console.WriteLine("Going North...");
+                        y--;
+                        break;
+                    case "S":
+                        Console.WriteLine("Going South...");
+                        y++;
+                        break;
+                    case "E":
+                        Console.WriteLine("Going East...");
+                        x--;
+                        break;
+                    case "W":
+                        Console.WriteLine("Going West...");
+                        x++;
+                        break;
+                }
+                try
+                {
+                    int terrain = TerrainChecker();
+                    StoryUtils.StoryGeneration(terrain);
+                }
+                catch (NullReferenceException)
+                {
+                    Console.WriteLine("You've gone off the edge of the map! Going North instead.");
                     y--;
-                    break;
-                case 'S':
-                    Console.WriteLine("Going South...");
-                    y++;
-                    break;
-                case 'E':
-                    Console.WriteLine("Going East...");
-                    x--;
-                    break;
-                case 'W':
-                    Console.WriteLine("Going West...");
-                    x++;
-                    break;
+                }                
             }
-            int terrain = TerrainChecker();
-            StoryUtils.StoryGeneration(terrain);
-
         }
     }
 }
