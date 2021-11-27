@@ -23,15 +23,8 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                 }
                 else
                 {
-                    try
-                    {
-                        Console.Clear();
-                        GameBoard.Movement(command[0]);
-                    }
-                    catch
-                    {
-                        Console.WriteLine("\n\nYour input was invalid. Either a command was wrong, or you tried to go off the edge of the world.");
-                    }
+                    Console.Clear();
+                    GameBoard.Movement(command[0]);
                 }
 
             }
@@ -45,12 +38,12 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
             {
                 try
                 {
-                    Console.WriteLine("Start (1)\nQuit (2)");
+                    Console.WriteLine("\nStart (1)\nQuit (2)\n");
                     state = Int32.Parse(Console.ReadLine());
                 }
                 catch
                 {
-                    Console.WriteLine("Enter a valid input.");
+                    Console.WriteLine("\nDo you not know your numbers?");
                 }
             }
             switch (state)

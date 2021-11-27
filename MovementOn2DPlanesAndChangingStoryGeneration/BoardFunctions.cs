@@ -51,14 +51,24 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
             //Will check the terrain and return an int for the other methods to use. 
             using (StreamReader BoardReader = new StreamReader("GameBoard.txt"))
             {
-                for (int i = 1; i < y; i++)
+                if (y > 0 && y < BoardSize +1 && x > 0 && x < BoardSize +1)
                 {
-                    BoardReader.ReadLine();
+                    for (int i = 1; i < y; i++)
+                    {
+                        BoardReader.ReadLine();
+                    }
                 }
+                else
+                {
+                    Console.WriteLine("You have gone off the edge of the world, but the Gods felt merciful and returned you to where you belong.\n\n");
+                    x = 6;
+                    y = 6;
+                }
+                
                 string boardrow = BoardReader.ReadLine();
 
                 int terrainnum = (int)Char.GetNumericValue(boardrow[(x - 1)]);
-                return terrainnum;
+                return terrainnum;                
             }
         }
 
@@ -83,19 +93,16 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
                         break;
                     case "W":
                         Console.WriteLine("Going West...");
-                        x++;
+                        x++; 
                         break;
                 }
-                try
-                {
-                    int terrain = TerrainChecker();
-                    StoryUtils.StoryGeneration(terrain);
-                }
-                catch (NullReferenceException)
-                {
-                    Console.WriteLine("You've gone off the edge of the map! Going North instead.");
-                    y--;
-                }                
+
+                int terrain = TerrainChecker();
+                StoryUtils.StoryGeneration(terrain);
+            }
+            else
+            {
+                Console.WriteLine("Invalid input.");
             }
         }
     }

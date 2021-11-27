@@ -9,7 +9,6 @@ namespace MovementOn2DPlanesAndChangingStoryGeneration
     {
         public static void StoryGeneration(int terrain)
         {
-            //Will grab a random story according to the terrain and give options. Will interact with inventory when implemented.
             string terrainfile;
 
             switch (terrain)
